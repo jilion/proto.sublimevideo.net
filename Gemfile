@@ -4,6 +4,7 @@ gem "bundler"
 gem "sinatra"
 gem "slim"
 gem "sass"
+gem "bourbon"
 
 # group :development do
 #   gem 'guard'

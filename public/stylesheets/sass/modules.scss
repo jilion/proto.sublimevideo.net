@@ -1,3 +1,5 @@
+@import "bourbon/bourbon";
+
 // Main navigation
 
 .main-nav {
@@ -15,4 +17,35 @@
 
 .main-nav li a:hover {
   color:#fff;
+}
+
+// Tagline
+
+.tagline {
+  padding:30px;
+  background:#ee7c48;
+  font-size:3em;
+  font-weight:normal;
+  text-align:center;
+  color:#fff;
+}
+
+.tagline small {
+  font-size:0.8em;
+}
+
+.tagline a {
+  display:inline-block;
+  margin-right:10px;
+  padding:0 18px 13px;
+  background:rgba(0,0,0,0.2);
+  color:inherit;
+  @include border-top-radius(5px);
+  @include border-bottom-radius(5px);
+  @include border-left-radius(5px);
+  @include border-right-radius(5px);
+}
+
+.tagline a:hover {
+  background:rgba(0,0,0,0.5);
 }
