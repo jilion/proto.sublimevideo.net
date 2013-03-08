@@ -1,0 +1,27 @@
+#page {
+  width:100%;
+}
+
+header {
+  padding:30px 30px;
+  background:#242c3b;
+}
+
+.l-site-logo {
+  float:left;
+}
+
+.l-inline {
+  display:inline-block;
+}
+
+.l-inline ul {
+  list-style-type:none;
+}
+
+.l-inline ul > li {
+  float:left;
+}
+
+.l-stacked {display:none;}
+
