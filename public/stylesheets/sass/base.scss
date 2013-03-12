@@ -1,3 +1,5 @@
+$darkblue:#003165;
+
 * {
   margin:0;
   padding:0;
@@ -7,7 +9,29 @@ body {
   background:#eef2f6;
   font-family:"omnes-pro","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size:18px;
+  font-weight:300;
   color:#7690B3;
+}
+
+h3 {
+  font-size:1.7em;
+  font-weight:normal;
+  color:$darkblue;
+}
+
+h4 {
+  font-size:1.3em;
+  font-weight:normal;
+  color:$darkblue;
+}
+
+ul {
+  list-style-type:none;
+}
+
+strong {
+  color:$darkblue;
+  font-weight:500;
 }
 
 a {

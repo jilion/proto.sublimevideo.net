@@ -3,6 +3,7 @@ html
   head
     title SublimeVideo.net Prototype
     
+    link rel='stylesheet' href='/stylesheets/fonts.css'
     link rel='stylesheet' href='/stylesheets/base.css'
     link rel='stylesheet' href='/stylesheets/layout.css'
     link rel='stylesheet' href='/stylesheets/modules.css'
@@ -42,20 +43,20 @@ html
         small
           a href="" Sign Up 
           | for free today and never miss a single play again.
-      section
+      section.demo-player
         section.demo-sidebar-1
           h3 
-            | Try it now 
-            em Even on Tablets & Mobiles!
+            | Try it now! 
+            em Check it out on Tablets & Mobiles too!
         section.demo-video-player
-          video class='sublime' data-name='Features Playlist #2' data-uid='features-playlist-2' height='243' id='video2' poster='http://cdn.sublimevideo.net/assets/demo/midnight_sun2_800-c6d73d0c7bcde93ad1f405b66f003ecc.jpg' preload='none' width='432'
+          video class='sublime' data-player-kit="2" data-name='SV.net Prototype Video Demo' data-uid='proto-demo-video' data-settings='autoresize:fit' height='243' id='video2' poster='http://cdn.sublimevideo.net/assets/demo/midnight_sun2_800-c6d73d0c7bcde93ad1f405b66f003ecc.jpg' preload='none' width='432'
             source src="http://media.sublimevideo.net/v/midnight_sun_sv1_2_360p.mp4"
             source src="http://media.sublimevideo.net/v/midnight_sun_sv1_2_360p.webm"
           h3 Try SublimeVideo Features & Add-ons
-          ul.demo-video-actions
+          ul.l-grid.demo-video-actions
             li
               a href="" Social Sharing
-            li
+            li.active
               a href="" Subtitles
             li
               a href="" Logo
@@ -65,6 +66,7 @@ html
               a href="" YouTube
             li
               a href="" Cue Zones
+          .spacer
           .demo-features-list
             p Learn more about all the features SublimeVideo comes with:
             ul
@@ -79,7 +81,9 @@ html
               li
                 a href="" WordPress Plugin
               li
-                a href="" View all
+                a href="" 
+                  em View all 
+                  small.icon-uniF473
         section.demo-sidebar-2
           h4 Choose a design
           ul.demo-choose-design
@@ -94,7 +98,7 @@ html
               | The basic player is 
               strong Free 
               | with unlimited plays!
-            span.separator
-            p Only pay for the add-ons you need!
-            a.btn href="" View Pricing
-        
+            .l-separator
+            p You just pay for the add-ons you need!
+            a.btn.full href="" View Pricing
+        .spacer

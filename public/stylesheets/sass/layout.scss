@@ -15,13 +15,22 @@ header {
   display:inline-block;
 }
 
-.l-inline ul {
-  list-style-type:none;
-}
-
 .l-inline ul > li {
   float:left;
 }
 
 .l-stacked {display:none;}
 
+.l-grid > li {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+  // IE7 hack to mimic inline-block on block elements
+  *display: inline;
+  *zoom: 1;
+}
+
+.l-separator {
+  display:block;
+  height:1px;
+  background:#c7d2e2;
+}

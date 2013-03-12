@@ -1,0 +1,52 @@
+@font-face {
+	font-family: 'SV-Icons';
+	src:url('/fonts/SV-Icons.eot');
+	src:url('/fonts/SV-Icons.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/SV-Icons.woff') format('woff'),
+		url('/fonts/SV-Icons.ttf') format('truetype'),
+		url('/fonts/SV-Icons.svg#SV-Icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'SV-Icons';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"]:before {
+*/
+.icon-play-alt:before, .icon-arrow-right:before, .icon-uniF473:before, .icon-arrow:before {
+	font-family: 'SV-Icons';
+	speak: none;
+  font-size:0.8em;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-play-alt:before {
+	content: "\e001";
+}
+.icon-arrow-right:before {
+	content: "\e002";
+}
+.icon-uniF473:before {
+	content: "\f473";
+}
+.icon-arrow:before {
+	content: "\e000";
+}
