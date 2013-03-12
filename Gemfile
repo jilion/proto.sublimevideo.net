@@ -5,6 +5,7 @@ gem "sinatra"
 gem "slim"
 gem "sass"
 gem "bourbon"
+gem "rack-coffee"
 
 # group :development do
 #   gem 'guard'
