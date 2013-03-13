@@ -27,7 +27,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"]:before {
 */
-.icon-play-alt:before, .icon-arrow-right:before, .icon-uniF473:before, .icon-arrow:before {
+.icon-play-alt:before, .icon-arrow-right:before, .icon-uniF473:before, .icon-arrow:before, .icon-uniF48B:before {
 	font-family: 'SV-Icons';
 	speak: none;
   font-size:0.8em;
@@ -49,4 +49,7 @@ you can use the generic selector below, but it's slower:
 }
 .icon-arrow:before {
 	content: "\e000";
+}
+.icon-uniF48B:before {
+	content: "\f48b";
 }

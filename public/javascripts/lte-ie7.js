@@ -9,7 +9,8 @@ window.onload = function() {
 			'icon-play-alt' : '&#xe001;',
 			'icon-arrow-right' : '&#xe002;',
 			'icon-uniF473' : '&#xf473;',
-			'icon-arrow' : '&#xe000;'
+			'icon-arrow' : '&#xe000;',
+			'icon-uniF48B' : '&#xf48b;'
 		},
 		els = document.getElementsByTagName('*'),
 		i, attr, html, c, el;

@@ -27,15 +27,53 @@ $darkblue:#003165;
 
 .main-nav ul > li {
   margin:8px 16px;
-  font-size:1.3em;
 }
 
-.main-nav li a {
+.main-nav li a, .main-nav .l-popup > a:hover {
+  font-size:1.3em;
   color:#626c82;
 }
 
 .main-nav li a:hover {
   color:#fff;
+}
+
+.main-nav .l-popup > a {
+  position:relative;
+  z-index:3;
+  cursor:default;
+}
+
+.main-nav .l-popup > a small {
+  font-size:0.7em;
+  margin-left:4px;
+}
+
+.main-nav .l-popup:hover .l-stacked a:hover {
+  color:$darkblue;
+}
+
+.main-nav .l-popup:hover .l-stacked {
+  display:block;
+}
+
+.main-nav .l-stacked {
+  display:none;
+  padding-top:42px;
+  position:absolute;
+  top:-7px;
+  left:-16px;
+  z-index:2;
+  background:#fff;
+  @include border-top-radius(4px);
+  @include border-bottom-radius(4px);
+  @include border-left-radius(4px);
+  @include border-right-radius(4px);
+  @include box-shadow(0 1px 4px 0 rgba(0,0,0,0.3));
+}
+
+.main-nav .l-stacked > li {
+  margin:0 16px 8px;
 }
 
 // Tagline

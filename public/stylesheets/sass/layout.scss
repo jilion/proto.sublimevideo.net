@@ -16,10 +16,16 @@ header {
 }
 
 .l-inline ul > li {
-  float:left;
+  display:inline-block;
 }
 
-.l-stacked {display:none;}
+.l-stacked > * {
+  display:block;
+}
+
+.l-popup {
+  position:relative;
+}
 
 .l-grid > li {
   display: inline-block;
