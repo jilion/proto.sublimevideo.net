@@ -8,12 +8,12 @@ html
     link rel='stylesheet' href='/stylesheets/layout.css'
     link rel='stylesheet' href='/stylesheets/modules.css'
     
-    script type="text/javascript" src="/javascripts/application.js"
-    
-    script type="text/javascript" src="//use.typekit.net/ohx8nqt.js"
+    script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"    
+    script src="//cdn.sublimevideo.net/js/ibvjcopp-beta.js"
+    script src="/javascripts/application.js"
+    script src="//use.typekit.net/ohx8nqt.js"
     javascript:
       try{Typekit.load();}catch(e){}
-    script src="//cdn.sublimevideo.net/js/ibvjcopp-beta.js" type="text/javascript"
   body
     section#page
       header
@@ -55,23 +55,23 @@ html
             | Try it now! 
             em Check it out on Tablets & Mobiles too!
         section.demo-video-player
-          video class='sublime' data-player-kit="2" data-name='SV.net Prototype Video Demo' data-uid='proto-demo-video' data-settings='autoresize:fit' height='243' id='video2' poster='http://cdn.sublimevideo.net/assets/demo/midnight_sun2_800-c6d73d0c7bcde93ad1f405b66f003ecc.jpg' preload='none' width='432' style="visibility:hidden"
+          video.sublime#home_demo_player data-player-kit="10" data-name='SV.net Prototype Video Demo' data-uid='proto-demo-video' data-settings='autoresize:fit;' data-embed-url="http://google.com" data-embed-enable="false" data-sharing-enable="false" data-logo-enable="false" height='243' poster='http://cdn.sublimevideo.net/assets/demo/midnight_sun2_800-c6d73d0c7bcde93ad1f405b66f003ecc.jpg' preload='none' width='432' style="visibility:hidden"
             source src="http://media.sublimevideo.net/v/midnight_sun_sv1_2_360p.mp4"
             source src="http://media.sublimevideo.net/v/midnight_sun_sv1_2_360p.webm"
           h3 Try SublimeVideo Features & Add-ons
           ul.l-grid.demo-video-actions
             li
-              a href="" Social Sharing
-            li.active
-              a href="" Subtitles
+              a href="" data-feature="sharing" Social Sharing
             li
-              a href="" Logo
+              a href="" data-feature="subtitles" Subtitles
             li
-              a href="" Embed
+              a href="" data-feature="logo" Logo
             li
-              a href="" YouTube
+              a href="" data-feature="embed" Embed
             li
-              a href="" Cue Zones
+              a href="" data-feature="youtube" YouTube
+            li
+              a href="" data-feature="cue_zones" Cue Zones
           .spacer
           .demo-features-list
             p Learn more about all the features SublimeVideo comes with:
@@ -94,11 +94,11 @@ html
           h4 Choose a design
           ul.demo-choose-design
             li
-              a href="" Classic
+              a href="" data-kit="10" Flat
             li
-              a href="" Flat
+              a href="" data-kit="9" Classic
             li
-              a href="" Light
+              a href="" data-kit="11" Light
           section.demo-box
             p 
               | The basic player is 
