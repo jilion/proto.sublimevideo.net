@@ -5,10 +5,11 @@ $darkblue:#003165;
 // Buttons
 
 .btn {
+  display:inline-block;
+  padding:0.6em 1em;
   background:#4088cb;
   color:#fff;
-  padding:0.6em 1em;
-  display:inline-block;
+  font-weight:500;
   @include border-top-radius(4px);
   @include border-bottom-radius(4px);
   @include border-left-radius(4px);
@@ -27,6 +28,11 @@ $darkblue:#003165;
 
 .main-nav {
   float:right;
+  @media screen and (max-width: 900px) {
+    float:none;
+    width:100%;
+    text-align:center;
+  }
 }
 
 .main-nav ul > li {
@@ -69,6 +75,7 @@ $darkblue:#003165;
   left:-16px;
   z-index:2;
   background:#fff;
+  text-align:left;
   @include border-top-radius(4px);
   @include border-bottom-radius(4px);
   @include border-left-radius(4px);
@@ -89,6 +96,14 @@ $darkblue:#003165;
   font-weight:300;
   text-align:center;
   color:#fff;
+  @media screen and (max-width: 1150px) {
+    padding:25px;
+    font-size:2.5em;
+  }  
+  @media screen and (max-width: 950px) {
+    padding:20px;
+    font-size:2em;
+  }  
 }
 
 .tagline small {
@@ -124,6 +139,10 @@ $darkblue:#003165;
   float:left;
   width:22%;
   text-align:center;
+  @media screen and (max-width:768px) {
+    width:100%;
+    float:none;
+  }
 }
 
 .demo-sidebar-1 h3 {
@@ -143,6 +162,11 @@ $darkblue:#003165;
   float:left;
   margin:0 3%;
   position:relative;
+  @media screen and (max-width:768px) {
+    width:100%;
+    float:none;
+    margin:0;
+  }
 }
 
 .demo-video-player h3 {
@@ -200,6 +224,10 @@ $darkblue:#003165;
 .demo-sidebar-2 {
   float:right;
   width:22%;
+  @media screen and (max-width:768px) {
+    width:100%;
+    float:none;
+  }
 }
 
 .demo-choose-design li {

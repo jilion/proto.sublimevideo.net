@@ -9,6 +9,10 @@ header {
 
 .l-site-logo {
   float:left;
+  @media screen and (max-width: 900px) {
+    float:none;
+    text-align:center;
+  }
 }
 
 .l-inline {
