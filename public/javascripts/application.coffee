@@ -19,6 +19,7 @@ class SublimeVideo.HomeDemo
   manageTogglerBtn: (element, attribute) ->
     btn = $(element)
     btn.on 'click', (event) =>
+      if attribute is "kit" then @kitSelector.find('li').removeClass('active')
       event.preventDefault()
       @setupAttribute btn.data(attribute)
       btn.parent().toggleClass('active')
@@ -34,7 +35,7 @@ class SublimeVideo.HomeDemo
         else
           @player.attr('data-youtube-id','rAq2rNEru8A')
       when "cue_zones"
-        console.log "Cue Zones"
+        # console.log "Cue Zones"
       else
         attribute_data = 'data-'+value+'-enable'
         if @player.attr(attribute_data ) is "true"

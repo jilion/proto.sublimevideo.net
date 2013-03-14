@@ -217,6 +217,11 @@ $darkblue:#003165;
   @include border-right-radius(6px);
 }
 
+.demo-choose-design li.active a {
+  background:$darkblue;
+  color:#fff;
+}
+
 .demo-box {
   background:#fff;
   padding:15px;
