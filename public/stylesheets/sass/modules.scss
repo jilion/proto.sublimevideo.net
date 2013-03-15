@@ -18,6 +18,7 @@ $darkblue:#003165;
 
 .orange {
   background:#f66929;
+  color:#fff;
 }
 
 .full {
@@ -46,6 +47,12 @@ $darkblue:#003165;
 
 .main-nav li a:hover {
   color:#fff;
+}
+
+.main-nav li a.orange {
+  color:#fff;
+  font-weight:300;
+  padding:0.2em 0.5em 0.3em;
 }
 
 .main-nav .l-popup > a {
