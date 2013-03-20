@@ -35,6 +35,7 @@ you can use the generic selector below, but it's slower:
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
+  margin-left:0.3em;
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 }
