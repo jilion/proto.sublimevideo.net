@@ -40,8 +40,12 @@ $darkblue:#003165;
   margin:8px 16px;
 }
 
-.main-nav li a, .main-nav .l-popup > a:hover {
+.main-nav li a {
   font-size:1.3em;
+}
+
+.main-nav .l-popup > a:hover {
+  color:#7690B3;
 }
 
 .main-nav li a.orange {
