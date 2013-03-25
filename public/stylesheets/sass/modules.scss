@@ -42,11 +42,6 @@ $darkblue:#003165;
 
 .main-nav li a, .main-nav .l-popup > a:hover {
   font-size:1.3em;
-  color:#626c82;
-}
-
-.main-nav li a:hover {
-  color:#fff;
 }
 
 .main-nav li a.orange {
@@ -94,9 +89,9 @@ $darkblue:#003165;
   margin:0 16px 8px;
 }
 
-// Tagline
+// Headline
 
-.tagline {
+.headline {
   padding:30px;
   background:#93a2b9;
   font-size:3em;
@@ -113,11 +108,11 @@ $darkblue:#003165;
   }  
 }
 
-.tagline small {
+.headline small {
   font-size:0.8em;
 }
 
-.tagline a {
+.headline a {
   display:inline-block;
   margin-right:10px;
   padding:0 18px 13px;
@@ -129,18 +124,18 @@ $darkblue:#003165;
   @include border-right-radius(5px);
 }
 
-.tagline a:hover {
+.headline a:hover {
   background:rgba(0,0,0,0.5);
 }
 
-// Headline
+// Tagline
 
-.headline {
-  padding:20px 0;
+.tagline {
+  padding:20px 0 40px;
   text-align:center;
 }
 
-.headline h2 {
+.tagline h2 {
   padding:5px 0;
   font-weight:300;
   font-size:2.3em;
@@ -149,7 +144,7 @@ $darkblue:#003165;
   }
 }
 
-.headline small {
+.tagline small {
   font-size:0.5em;
 }
 
@@ -157,9 +152,6 @@ $darkblue:#003165;
 
 .demo-player {
   padding:30px 0;
-  width:90%;
-  margin:0 auto;
-  max-width:1100px;
 }
 
 .demo-sidebar-1 {
@@ -200,6 +192,7 @@ $darkblue:#003165;
   float:right;
   margin:0 0 25px 3%;
   position:relative;
+  @include box-shadow(rgba(0,0,0,0.5) 0 1px 4px);
   @media screen and (max-width:920px) {
     width:100%;
     float:none;
@@ -232,10 +225,10 @@ $darkblue:#003165;
   display:block;
   overflow:hidden;
   line-height:0;
-  text-align:center;
-  font-weight:500;
-  color:#242c3b;
   border:3px solid #fff;
+//  text-align:center;
+//  font-weight:500;
+//  color:#242c3b;
   @media screen and (max-width:920px) {
     border-width:4px;
   }
@@ -243,10 +236,6 @@ $darkblue:#003165;
   @include border-right-radius(7px);
 }
 
-.demo-choose-design a img {
-//  display:block;
-
-}
 
 .demo-choose-design li.active a {
   background:#242c3b;
@@ -288,60 +277,113 @@ $darkblue:#003165;
   background:#242c3b;
 }
 
-//.demo-features-list {
-//  font-size:0.85em;
-//}
-//
-//.demo-features-list p {
-//  padding:8px 0;
-//}
-//
-//.demo-features-list ul {
-//  line-height:26px;
-//  @include columns(2 2em);
-//  @media screen and (max-width:920px) {
-//    @include columns(4 2em);    
-//  }
-//}
-//
-//.demo-features-list li {
-//  font-weight:500;
-//}
-
-//.demo-sidebar-2 {
-//  float:right;
-//  width:22%;
-//  @media screen and (max-width:768px) {
-//    width:100%;
-//    float:none;
-//  }
-//}
-
-//.demo-box {
-//  background:#fff;
-//  padding:15px;
-//  margin:35px 0;
-//  font-size:1.2em;
-//  text-align:center;
-//  @include box-shadow(0 1px 2px 0 rgba(0,0,0,0.15));
-//  @media screen and (max-width:950px) {
-//    font-size:1em;
-//  }
-//}
-//
-//.demo-box p {
-//  padding:5px 0 10px;
-//}
-//
-//.demo-box p:first-child {padding-top:0;}
-//
-//.demo-box .l-separator {
-//  margin:10px 0 5px;
-//}
-
 .view-all-features {
   @media screen and (max-width:920px) {
     font-size:1.1em;
     text-align:center;
   }
+}
+
+.customers-logos-box {
+  width:40%;
+  float:left;
+  text-align:center;
+  @media screen and (max-width:920px) {
+    width:100%;
+    float:none;
+  }
+}
+
+.customers-logos li {
+  @include display-box;
+  @include box-pack(center);
+  @include box-align(center);
+  float:left;
+  margin:0;
+  width:33%;
+  height:60px;
+}
+
+.customers-logos img {
+  width:auto;
+  max-width:70%;
+  max-height:80%;
+}
+
+.horizon-box {
+  width:28%;
+  margin:0 1%;
+  float:left;
+  text-align:center;
+  @media screen and (max-width:920px) {
+    width:48%;
+    margin:0 1%;
+  }
+}
+
+#lightbox_horizon {
+  margin:13px auto 0;
+  display:block;
+  max-width:270px;
+  line-height:0;
+  @include box-shadow(rgba(0,0,0,0.5) 0 1px 4px);
+}
+
+.horizon-box small {
+  display:inline-block;
+  margin-top:7px;
+}
+
+.tailor-made-box {
+  width:28%;
+  margin:0 1%;
+  float:left;
+  text-align:center;
+  @media screen and (max-width:920px) {
+    width:48%;
+    margin:0 1%;
+  }
+}
+
+.tailor-made-box img {
+  margin-top:10px;
+}
+
+// Footer
+
+.footer-links {
+  width:60%;
+  float:left;
+  @media screen and (max-width:920px) {
+    width:100%;
+    float:none;
+    text-align:center;
+  }
+}
+
+.footer-col {
+  width:33%;
+  float:left;
+  line-height:2em;
+}
+
+.footer-text {
+  float:right;
+  width:35%;
+  padding:5% 5% 0 0;
+  text-align:center;
+  font-size:1.5em;
+  line-height:1.6em;
+  @media screen and (max-width:920px) {
+    width:100%;
+    float:none;
+    padding-right:0;
+    font-size:1.1em;
+  }
+}
+
+.footer-copyright {
+  padding:40px 0 0;
+  text-align:center;
+  font-size:0.8em;
 }

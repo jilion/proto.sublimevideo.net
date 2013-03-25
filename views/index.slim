@@ -18,7 +18,7 @@ html
       try{Typekit.load();}catch(e){}
   body
     section#page
-      header
+      header.l-dark
         h1.l-site-logo
           img src="/images/sublimevideo.svg" alt="SublimeVideo" width="260"
         nav.l-inline.main-nav
@@ -45,25 +45,19 @@ html
             li
               a href="" Login
         .spacer
-      h2.tagline
+      h2.headline
         | Yesterday SublimeVideo played 500K+ Videos.
         br
         em
           small
             | The HTML5 Video Player people trust.
           / a href="" Sign Up Now
-      section.demo-player
+      section.demo-player.l-full-width-wrap
         section.demo-video-player
           video.sublime#home_demo_player data-player-kit="10" data-name='SV.net Prototype Video Demo' data-uid='proto-demo-video' data-settings='autoresize:fit;' data-embed-url="http://google.com" data-embed-enable="false" data-sharing-enable="false" data-logo-enable="false" height='243' poster='http://cdn.sublimevideo.net/assets/demo/midnight_sun2_800-c6d73d0c7bcde93ad1f405b66f003ecc.jpg' preload='none' width='432' style="visibility:hidden"
             source src="http://media.sublimevideo.net/v/midnight_sun_sv1_2_360p.mp4"
             source src="http://media.sublimevideo.net/v/midnight_sun_sv1_2_360p.webm"
         section.demo-sidebar-1
-          / h3
-          /   | Try it now! 
-          /   em Check it out on Tablets & Mobiles too!
-          / section.demo-box
-          /   p SublimeVideo Player Starts Free
-          /   a.btn.full.orange href="" Get It Now
           h3 Choose a design
           ul.l-grid.demo-choose-design
             li.active
@@ -101,7 +95,7 @@ html
                 em View all features & add-ons
                 small.icon-uniF473
         .spacer
-        .headline
+        .tagline
           h2
             | The basic player is 
             strong Free 
@@ -113,4 +107,100 @@ html
                 | View Pricing 
                 span.icon-uniF473
         .spacer
-        
+        .l-separator
+        .customers-logos-box
+          h5 They use SublimeVideo
+          ul.l-grid.customers-logos
+            li
+              img src="/images/logos/logo-01.svg"
+            li
+              img src="/images/logos/logo-02.svg"
+            li
+              img src="/images/logos/logo-03.svg"
+            li
+              img src="/images/logos/logo-04.svg"
+            li
+              img src="/images/logos/logo-05.svg"
+            li
+              img src="/images/logos/logo-06.svg"
+            li
+              img src="/images/logos/logo-07.svg"
+            li
+              img src="/images/logos/logo-08.svg"
+            li
+              img src="/images/logos/logo-09.svg"
+          .spacer
+        .horizon-box
+          h5 The Technology
+          a.sublime#lightbox_horizon href="#video_horizon"
+            img.video_thumb src="/images/thumb_1.jpg" width="100%"
+          video#video_horizon width="800" height="450" style='display:none' poster="/images/poster_1.jpg" data-uid='home' data-name='Home' data-action-enable='true' data-embed-size='640x360' data-embed-url="/embeds/horizon.html" data-sharing-text='Check out SublimeVideo Horizon, ground-breaking HTML5 Video framework' data-sharing-url="http://sublimevideo.net"
+            source src="http://media.sublimevideo.net/v/horizon_360p.mp4" data-quality='base'
+            source src="http://media.sublimevideo.net/v/horizon_720p.mp4" data-quality='hd'
+            source src="http://media.sublimevideo.net/v/horizon_360p.webm" data-quality='base'
+            source src="http://media.sublimevideo.net/v/horizon_720p.webm" data-quality='hd'
+          small
+            a href=""
+              | Learn more about Horizon
+              small.icon-uniF473
+        .tailor-made-box
+          h5 Tailor-Made Players
+          a href=""
+            img src="/images/blueprint.png" alt="Blueprint" width="60%"
+          p
+            strong Need a tailor-made player?
+          strong
+            a href=""
+              | View our showcases and contact us
+              small.icon-uniF473
+        .spacer
+    footer.l-dark
+      .l-full-width-wrap
+        .footer-links
+          nav.footer-col
+            h5 Solutions
+            ul
+              li
+                a href="" Features
+              li
+                a href="" Horizon Framework
+              li
+                a href="" Tailor-Made Player
+              li
+                a href="" Testimonials
+          nav.footer-col
+            h5 Support
+            ul
+              li
+                a href="" Help
+              li
+                a href="" Documentation
+              li
+                a href="" Forum
+              li
+                a href="" Player Releases
+          nav.footer-col
+            h5 Company
+            ul
+              li
+                a href="" About
+              li
+                a href="" News
+              li
+                a href="" Contact Us
+              li
+                a href="http://jilion.com/jobs" Jobs
+          .spacer
+        .footer-text
+          p
+            | Follow 
+            a href="http://twitter.com/jilion" @jilion 
+            | on Twitter for the latest news. SublimeVideo is a service by 
+            a href="http://jilion.com"
+              | Jilion
+            | .
+          
+        .spacer
+      p.footer-copyright
+        | Terms &amp; Conditions | Privacy Policy | Copyright © 2013 Jilion® — SublimeVideo and Jilion are registered trademarks.
+            

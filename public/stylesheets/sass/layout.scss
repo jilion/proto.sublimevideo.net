@@ -1,10 +1,30 @@
+$darkblue:#242c3b;
+
 #page {
   width:100%;
 }
 
 header {
   padding:27px 30px 25px;
-  background:#242c3b;
+}
+
+.l-dark {
+  background:$darkblue;
+  color:#505b78;
+}
+
+.l-dark a {
+  color:#7690B3;
+}
+
+.l-dark a:hover {
+  color:#fff;
+}
+
+.l-full-width-wrap {
+  width:90%;
+  margin:0 auto;
+  max-width:1100px;
 }
 
 .l-site-logo {
@@ -43,4 +63,8 @@ header {
   display:block;
   height:1px;
   background:#c7d2e2;
+}
+
+footer {
+  padding:20px 0 50px;
 }
