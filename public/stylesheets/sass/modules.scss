@@ -164,7 +164,8 @@ $darkblue:#003165;
   }
 }
 
-.tagline small {
+.tagline .btn-wrap {
+  display:inline;
   font-size:0.85em;
   @media screen and (max-width:568px) {
     font-size:1em;
@@ -177,6 +178,10 @@ $darkblue:#003165;
   padding:0.2em 0.5em 0.3em;
   margin-right:0.25em;
   font-weight:300;
+}
+
+.tagline small {
+  font-size:0.8em;
 }
 
 // Home player demo
