@@ -38,10 +38,16 @@ $darkblue:#003165;
 
 .main-nav ul > li {
   margin:8px 16px;
+  @media screen and (max-width:568px) {
+    margin:4px 5px;
+  }
 }
 
 .main-nav li a {
   font-size:1.3em;
+  @media screen and (max-width:568px) {
+   font-size:1em;
+  }
 }
 
 .main-nav .l-popup > a:hover {
@@ -105,11 +111,15 @@ $darkblue:#003165;
   @media screen and (max-width: 1150px) {
     padding:25px;
     font-size:2.5em;
-  }  
+  }
   @media screen and (max-width: 950px) {
     padding:20px;
     font-size:2em;
-  }  
+  }
+  @media screen and (max-width:568px) {
+    padding:10px;
+    font-size:1.3em;
+  }
 }
 
 .headline small {
@@ -135,8 +145,11 @@ $darkblue:#003165;
 // Tagline
 
 .tagline {
-  padding:20px 0 40px;
+  padding:1.3em 0 2em;
   text-align:center;
+  @media screen and (max-width:568px) {
+    padding:0.8em 0 1.2em;
+  }
 }
 
 .tagline h2 {
@@ -146,10 +159,24 @@ $darkblue:#003165;
   @media screen and (max-width:920px) {
     font-size:1.8em;
   }
+  @media screen and (max-width:568px) {
+    font-size:1.5em;
+  }
 }
 
 .tagline small {
-  font-size:0.5em;
+  font-size:0.6em;
+  @media screen and (max-width:568px) {
+    font-size:0.8em;
+    display:block;
+    margin:13px 0 0;
+  }
+}
+
+.tagline .btn {
+  top:-0.3em;
+  position:relative;
+  padding:0.4em 0.8em;
 }
 
 // Home player demo
@@ -324,6 +351,11 @@ $darkblue:#003165;
     width:48%;
     margin:0 1%;
   }
+  @media screen and (max-width:568px) {
+    width:100%;
+    margin:0;
+    float:none;
+  }
 }
 
 #lightbox_horizon {
@@ -343,6 +375,12 @@ $darkblue:#003165;
     width:48%;
     margin:0 1%;
   }
+  @media screen and (max-width:568px) {
+    width:100%;
+    margin:0;
+    float:none;
+  }
+  
 }
 
 .tailor-made-box img {
@@ -365,6 +403,12 @@ $darkblue:#003165;
   width:33%;
   float:left;
   line-height:2em;
+  @media screen and (max-width:568px) {
+    width:100%;
+    margin:0;
+    float:none;
+    font-size:1.2em;
+  }
 }
 
 .footer-text {
@@ -383,7 +427,7 @@ $darkblue:#003165;
 }
 
 .footer-copyright {
-  padding:40px 0 0;
+  padding:40px 20px 0;
   text-align:center;
   font-size:0.8em;
 }

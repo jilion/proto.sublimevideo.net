@@ -1,5 +1,13 @@
 window.SublimeVideo = {}
 
+if navigator.userAgent.match(/iPhone/i) or navigator.userAgent.match(/iPad/i)
+  viewportmeta = document.querySelector("meta[name=\"viewport\"]")
+  if viewportmeta
+    viewportmeta.content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0"
+    document.body.addEventListener "gesturestart", (->
+      viewportmeta.content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6"
+    ), false
+
 sublime.ready ->
   SublimeVideo.HomeDemoInstance = new SublimeVideo.HomeDemo("#home_demo_player")
   

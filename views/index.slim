@@ -97,17 +97,25 @@ html
         .spacer
         .tagline
           h2
-            | The basic player is 
+            small
+              a.btn.orange href="" 
+                | Get It Now 
+                / span.icon-uniF473
+            |  It's 
             strong Free 
             | with unlimited plays!
           h2 
-            | You just pay for the add-ons you need! 
+            | You just pay for the extra add-ons you need! 
             small
               a.btn href="" 
                 | View Pricing 
                 span.icon-uniF473
-        .spacer
         .l-separator
+        / .tagline
+        /   h2 Use SublimeVideo in your site for free today.
+
+        / .l-separator
+        .spacer
         .customers-logos-box
           h5 They use SublimeVideo
           ul.l-grid.customers-logos
@@ -199,7 +207,14 @@ html
             a href="http://jilion.com"
               | Jilion
             | .
-          
+          / .footer-newsletter
+          /   form action="http://jilion.createsend.com/t/r/s/shylrr/" method="post" id="subForm"
+          /     p
+          /       label for="shylrr-shylrr" Subscribe for news
+          /     .field_wrap
+          /       input.field type="text" name="cm-shylrr-shylrr" id="shylrr-shylrr" size="25" placeholder="Email"
+          /       button type="submit"
+          /         span Subscribe
         .spacer
       p.footer-copyright
         a href="" Terms &amp; Conditions 
