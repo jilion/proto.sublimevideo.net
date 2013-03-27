@@ -419,7 +419,7 @@ $darkblue:#003165;
 .footer-text {
   float:right;
   width:35%;
-  padding:5% 5% 0 0;
+  padding:3.5% 5% 0 0;
   text-align:center;
   font-size:1.5em;
   line-height:1.6em;
@@ -431,8 +431,12 @@ $darkblue:#003165;
   }
 }
 
-.footer-networks {
+.footer-subscribe {
   padding-top:3%;
+}
+
+.footer-networks {
+  padding-top:1.5%;
 }
 
 .footer-copyright {
