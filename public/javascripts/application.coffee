@@ -56,6 +56,6 @@ class SublimeVideo.HomeDemo
     sublime.unprepare @player[0]
     
   prepareAndPlayVideo: ->
-    @player.attr('autoplay','true')
+    @player.attr('data-autoplay','true')
     sublime.prepare @player[0]
     
