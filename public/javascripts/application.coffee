@@ -59,6 +59,7 @@ class SublimeVideo.HomeDemo
     sublime.unprepare @player[0]
   
   prepareAndPlayVideo: (autoplay) ->
+    # Don't autoplay if it change the design
     if autoplay
       @player.attr('data-autoplay','true')
     else
