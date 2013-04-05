@@ -26,13 +26,16 @@ class SublimeVideo.HomeDemo
   
   manageTogglerBtn: (element, attribute) ->
     btn = $(element)
+    autoplay = true
     btn.on 'click', (event) =>
-      if attribute is "kit" then @kitSelector.find('li').removeClass('active')
+      if attribute is "kit"
+        @kitSelector.find('li').removeClass('active')
+        autoplay = false
       event.preventDefault()
-      @setupAttribute btn.data(attribute)
+      @setupAttribute btn.data(attribute), autoplay
       btn.parent().toggleClass('active')
     
-  setupAttribute: (value) ->
+  setupAttribute: (value, autoplay) ->
     @unprepareVideo()
     switch value
       when 9, 10, 11
@@ -50,12 +53,15 @@ class SublimeVideo.HomeDemo
           @player.attr(attribute_data , "false")
         else
           @player.attr(attribute_data , "true")
-    @prepareAndPlayVideo()
+    @prepareAndPlayVideo(autoplay)
     
   unprepareVideo: ->
     sublime.unprepare @player[0]
-    
-  prepareAndPlayVideo: ->
-    @player.attr('data-autoplay','true')
+  
+  prepareAndPlayVideo: (autoplay) ->
+    if autoplay
+      @player.attr('data-autoplay','true')
+    else
+      @player.removeAttr('data-autoplay')
     sublime.prepare @player[0]
     

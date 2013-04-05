@@ -6,4 +6,8 @@ class Proto < Sinatra::Base
     slim :index
   end
   
+  get '/features' do
+    slim :features
+  end
+  
 end
