@@ -262,6 +262,7 @@ $darkblue:#003165;
   overflow:hidden;
   line-height:0;
   border:3px solid #fff;
+  opacity:0.65;
 //  text-align:center;
 //  font-weight:500;
 //  color:#242c3b;
@@ -270,12 +271,17 @@ $darkblue:#003165;
   }
   @include border-left-radius(7px);
   @include border-right-radius(7px);
+  @include transition(opacity 0.3s ease-in-out);
 }
 
+.demo-choose-design a:hover {
+  opacity:1;
+}
 
 .demo-choose-design li.active a {
   background:#242c3b;
   border-color:#242c3b;
+  opacity:1;
 //  color:#fff;
 }
 
