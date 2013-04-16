@@ -37,6 +37,11 @@ ul {
   list-style-type:none;
 }
 
+blockquote {
+  font-family:"kepler-std-extended-display", Georgia, Times, serif;
+  font-style:italic;
+}
+
 strong {
   color:$darkblue;
   font-weight:500;

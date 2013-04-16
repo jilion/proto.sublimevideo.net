@@ -7,6 +7,16 @@ if navigator.userAgent.match(/iPhone/i) or navigator.userAgent.match(/iPad/i)
     document.addEventListener("gesturestart", (()->
       viewportmeta.content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6"
     ), false)
+    
+$(document).ready ->
+  $("#customers-quotes-slideshow > li:gt(0)").hide().addClass("blur")
+
+  setInterval -> 
+    $el = $('#customers-quotes-slideshow > li:first')
+    $el.addClass("blur").fadeOut 800, ->
+      $el.next().fadeIn(800).removeClass("blur")
+      $el.appendTo('#customers-quotes-slideshow')
+  , 9000
 
 sublime.ready ->
   SublimeVideo.HomeDemoInstance = new SublimeVideo.HomeDemo("#home_demo_player")

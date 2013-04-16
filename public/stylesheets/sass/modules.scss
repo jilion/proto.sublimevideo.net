@@ -311,8 +311,6 @@ $darkblue:#003165;
   color:#fff;
   @include border-top-radius(4px);
   @include border-bottom-radius(4px);
-  @include border-left-radius(4px);
-  @include border-right-radius(4px);
 }
 
 .demo-video-actions li.active a {
@@ -325,6 +323,75 @@ $darkblue:#003165;
     text-align:center;
   }
 }
+
+// Customers Quotes
+
+.customers-quotes {
+  position:relative;
+//  height:180px;
+}
+
+.customers-quotes > li {
+//  position:absolute;
+//  top:0;
+//  left:0;
+//  height:160px;
+  min-height:160px;
+  padding-top:20px;
+  @include transition(-webkit-filter 1s ease-in-out);
+  @media screen and (max-width:1024px) {
+    min-height:120px;
+  }
+}
+
+.customers-quotes > li.blur {
+  -webkit-filter:blur(10px);
+}
+
+.customers-quotes img {
+  width:130px;
+  float:left;
+  margin:6px 4% 20px 10%;
+  line-height:100%;
+  @include border-top-radius(50%);
+  @include border-bottom-radius(50%);
+  @media screen and (max-width:1024px) {
+    width:90px;
+  }
+  
+  @media screen and (max-width:920px) {
+    width:100px;
+    display:block;
+    float:none;
+    margin:0 auto 13px;
+  }
+}
+
+.customers-quotes blockquote {
+  font-size:1.6em;
+  line-height:1.7em;
+  padding-right:10%;
+  @media screen and (max-width:1024px) {
+    font-size:1.3em;
+    line-height:1.5em;
+  }
+  @media screen and (max-width:920px) {
+    text-align:center;
+    padding-right:0;
+  }
+}
+
+.customers-quotes blockquote em {
+  display:inline-block;
+  padding-left:2%;
+  font-size:0.7em;
+}
+
+.view-all-testimonials-box {
+  padding:20px 0;
+}
+
+// Customers Logos
 
 .customers-logos-box {
   width:30%;
